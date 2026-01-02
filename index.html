@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LookingGlass – DIY HUD Glasses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>LookingGlass</h1>
+  <p>A DIY heads-up display mounted directly to glasses</p>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      LookingGlass is a heads-up display designed to mount directly onto my glasses.
+      The idea came from seeing other projects like the Optigon and DIY Edith glasses,
+      and realizing that since I already wear glasses most of the time, I might as
+      well give them some extra functionality.
+    </p>
+
+    <p>
+      The goal is to create a lightweight, usable HUD that can display information
+      directly in my field of view without completely blocking vision.
+    </p>
+
+    <img src="imgs/CONCEPT.png" alt="LookingGlass concept sketch" />
+  </section>
+
+  <section>
+    <h2>Optics & Hardware</h2>
+    <p>
+      The optics for LookingGlass are intentionally simple. The display is mounted
+      off to the side of the glasses and reflected using a mirror. A lens allows
+      my eyes to properly focus on the OLED screen, and a beam splitter lets me
+      see the display while still seeing through the glasses.
+    </p>
+
+    <p>
+      For computing, I’m using a Raspberry Pi 5 connected to a battery pack. This
+      is definitely overkill for the project, but it’s what I had on hand. A more
+      refined version could use a smaller board and a custom charging system.
+    </p>
+
+    <p>
+      Taking inspiration from the Optigon, the Raspberry Pi and battery are mounted
+      on a belt, keeping weight off the glasses themselves.
+    </p>
+  </section>
+
+  <section>
+    <h2>CAD Design</h2>
+    <p>
+      All of the mechanical parts were designed in CAD. The parts are intended to
+      be 3D printed in PLA, with most components either friction-fit or secured
+      using hot glue.
+    </p>
+
+    <div class="image-grid">
+      <img src="imgs/cad.png" alt="CAD model of LookingGlass" />
+      <img src="imgs/open_cad.png" alt="Exploded CAD view" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Build & Testing</h2>
+    <p>
+      This is the physical build of LookingGlass. The display is clearly readable,
+      and while the OLED can’t show many characters at a large font size, I wrote
+      code to smoothly scroll text across the screen.
+    </p>
+
+    <p>
+      Even in this early state, the project proves that a functional, wearable HUD
+      is very achievable with simple optics and off-the-shelf components.
+    </p>
+
+    <div class="image-grid">
+      <img src="imgs/full.png" alt="Full LookingGlass build" />
+      <img src="imgs/screen.png" alt="OLED screen in use" />
+      <img src="imgs/display.png" alt="Display mounted on glasses" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Future Improvements</h2>
+    <p>
+      Future versions could focus on reducing size and power consumption, improving
+      optics, and adding more advanced software features such as notifications,
+      navigation, or sensor data overlays.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Built by Rikhav •
+    <a href="#" target="_blank">GitHub Repository</a>
+  </p>
+</footer>
+
+</body>
+</html>
